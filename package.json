@@ -8,7 +8,7 @@
   "scripts": {
     "build": "gatsby build --prefix-paths",
     "deploy": "yarn clean && yarn build && gh-pages -d public -b main",
-    "deploy-ci": "yarn build && gh-pages -d public -b main -r https://$GH_TOKEN@github.com/saheelahmed2/saheelahmed2.github.io.git",
+    "deploy-ci": "yarn build && gh-pages -d public -b main -r https://${GH_TOKEN}@github.com/saheelahmed2/saheelahmed2.github.io.git",
     "develop": "gatsby develop",
     "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
     "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
