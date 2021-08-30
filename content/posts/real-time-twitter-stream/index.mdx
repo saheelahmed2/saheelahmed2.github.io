@@ -38,7 +38,7 @@ someone mentions your company’s name. Your application can receive the tweet i
 The only issue with this API is the consumption limits. The API doesn't enforce strict API limits but can stop streaming at 
 any time. Every Twitter account can connect to a small sampling of the streaming API. This is done to guarantee users a good 
 experience. The development of tools to spam, mislead users, and so on is forbidden. You can read more about this API 
-[here](https://developer.twitter.com/en/docs)
+[here](https://developer.twitter.com/en/docs).
 
 ### Invoking Twitter API with Tweepy
 
@@ -89,7 +89,7 @@ class MyStreamListener(tweepy.StreamListener):
 
 ```
 
-**Using this class to create a `Stream` object passing the auth API and stream listener.**
+**Using this class to create a `Stream` object passing the auth API and stream listener**
 
 ```python
 myStreamListener = MyStreamListener()
@@ -99,7 +99,7 @@ myStream = tweepy.Stream(auth = api.auth, listener=myStreamListener
 
 **Starting a Stream**
 
-In this example we will use location to stream all tweets falling under the bound box.
+We will use location to stream all tweets falling under the bound box.
 
 ```python
 twitterStream.filter(locations=[
@@ -130,9 +130,9 @@ We can finally return the Flask response to be rendered by the front end leaflet
 ## Summary
 The project is all about building a real-time twitter stream that streams live tweets coming from across all countries and presenting it on global 
 map in real time. It is hosted on local server built using Flask( a micro framework for Python), coded completely in Python, using Twitter’s streaming 
-API(Twitter for Developers).The frontend map is built using the custom [Leafletjs](https://leafletjs.com/) (an open source javascript library for mobile-friendly interactive maps).
+API(Twitter for Developers). The frontend map is built using the custom [Leafletjs](https://leafletjs.com/) (an open source javascript library for mobile-friendly interactive maps).
 
-You can find the entire code [here](https://github.com/saheelahmed2/Real-Time-Twitter-Stream)
+You can find the entire code [here](https://github.com/saheelahmed2/Real-Time-Twitter-Stream).
 ## Resources
 
 - [Flask](http://flask.pocoo.org/)
