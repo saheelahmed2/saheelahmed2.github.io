@@ -21,12 +21,15 @@ and [collaborative filtering methods](https://developers.google.com/machine-lear
 
 **Content-based filtering** methods construct portraits of users and items through the analysis of extra information, such as document content, user 
 profiles, and the attributes of items, to make recommendations. In most cases, the information that is used to construct the portraits 
-is difficult to obtain or even fake; therefore, its performance and application range suffer from significant limitations. **Collaborative 
-filtering** algorithms are the most widely used algorithms in recommendation systems; they are different from content-based methods in that 
+is difficult to obtain or even fake; therefore, its performance and application range suffer from significant limitations. 
+
+**Collaborative filtering** algorithms are the most widely used algorithms in recommendation systems; they are different from content-based methods in that 
 they do not require information about users or items, and they make accurate recommendations based only on interaction information between
 users and items such as clicks, browsing, and rating. Although this method is simple and effective, with the rapid development of the Internet,
 the high sparsity of the data limits the performance of the algorithm; therefore, researchers have begun to look for other methods of improving 
-the recommendation performance. A third and more popular approach is **Modal based filtering** algorithm. The model-based methods are developed with
+the recommendation performance. 
+
+A third and more popular approach is **Modal based filtering** algorithm. The model-based methods are developed with
 data mining and machine learning algorithms to find patterns based on training data. Popular techniques of the model-based methods include the 
 Bayesian models, clustering models, latent semantic models such as **singular value decomposition**, and probabilistic latent semantic 
 analysis. The technique we will going to use is single value decomposition based on a popular algorithm known as **Low-Rank Matrix Factorisation**.
