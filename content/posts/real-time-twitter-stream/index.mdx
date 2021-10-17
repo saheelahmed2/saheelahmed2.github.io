@@ -113,18 +113,24 @@ We now create a flask server to route streaming tweets to an endpoint. We conver
 ```python
 @app.route('/data')
 def stream_data():
-    new_data = []
+	geo_data = {
+	        "type": "FeatureCollection",
+	        "features": []
+	    }
     for item in data:
-        temp_data = {}
-        temp_data['geometry'] = {}
-        temp_data['properties'] = {}
-        temp_data['type'] = 'Feature'
-        temp_data['geometry']['type'] = 'Point'
-        temp_data['geometry']['coordinates'] = item['coordinates']['coordinates']
-        temp_data['properties']['name'] = item['text']
-        new_data.append(temp_data)
-        return jsonify(new_data)
+    	geo_item = {
+    		"type": "Feature",
+    		"geometry": {
+    			"type": "Point",
+    			"coordinates": item['coordinates']['coordinates']
+    		},
+    		"properties": {
+    			"name": item["text"]
+    		},
 
+    	}
+    	geo_data['features'].append(geo_item)
+    return jsonify(geo_data)
 ```
 We can finally return the Flask response to be rendered by the front end leaflet map.
 ## Summary
