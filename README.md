@@ -14,11 +14,9 @@
   <img src="https://travis-ci.org/saheelahmed2/saheelahmed2.github.io.svg?branch=source" alt="Travis CI status" />
 </p>
 
-This is the Github repository for my website, [saheelahmed2.github.io](https://saheelahmed2.github.io)/[saheelahmed.xyz](https://saheelahmed.xyz).
+This is the Github repository for my website, [saheelahmed2.github.io](https://saheelahmed2.github.io).
 
-This website is inspired & built upon [gatsby-starter-minimal-blog](https://github.com/LekoArts/gatsby-starter-minimal-blog) starter using  @lekoarts/gatsby-theme-minimal-blog Gatsby theme. It introduces a concept called "shadowing" which allows users to customise and replace files in the `src` directory. You can read more about [shadowing in Gatsby Themes](https://www.gatsbyjs.com/docs/how-to/plugins-and-themes/shadowing/).
-
-Used GatsbyJS as the static site generator, because it allows for doing lots of cool things in the future, like interweaving React and Markdown with [MDX](https://mdxjs.com/).
+Inspired from [gatsby-starter-minimal-blog](https://github.com/LekoArts/gatsby-starter-minimal-blog) starter using  @lekoarts/gatsby-theme-minimal-blog Gatsby theme.
 
 ## ✨ Features
 
@@ -48,6 +46,7 @@ yarn
 # start hot-reloading server
 gatsby develop
 ```
+
 > **Note:** The central branch is `source` and not `main`, because Github Pages forces deployment of any user page to the `main` branch. Change the default branch from `main` to something else and use `main` as a site deployment only. Travis CI builds the site to main automatically. Read more [here](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/#:~:text=your%20publishing%20source.-,Deploying%20to%20a%20GitHub%20Pages%20subdomain%20at%20github.io,-For%20a%20repository).
 
 After running the above code, you can see the website running on http://localhost/8000
